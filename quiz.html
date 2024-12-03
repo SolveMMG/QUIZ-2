@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Web Quiz</title>
+    <link rel="stylesheet" href="./quiz.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1 class="quiz-title">Basic Web Quiz</h1>
+        <div id="quiz-section">
+            <p id="timer" class="timer">Time Left: 30s</p>
+            <p id="question-text" class="question-text"></p>
+            <form id="quiz-form">
+                <div class="option">
+                    <input type="radio" name="answer" id="a" value="0">
+                    <label for="a" id="a-label">A. </label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="answer" id="b" value="1">
+                    <label for="b" id="b-label">B. </label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="answer" id="c" value="2">
+                    <label for="c" id="c-label">C. </label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="answer" id="d" value="3">
+                    <label for="d" id="d-label">D. </label>
+                </div>
+                <button type="button" id="submit-answer" class="quiz-button">Submit Answer</button>
+            </form>
+            <button id="next-question" class="quiz-button" style="display:none;">Next Question</button>
+            <div id="correct-answer" class="feedback" style="display:none;">
+            </div>
+            
+        </div>
+        <div id="score" class="score-display" style="display:none;">
+            <button id="retry-quiz" class="quiz-button">Try Again</button>
+        </div>
+    </div>
+    <script src="./quiz.js"></script>
+</body>
+</html>

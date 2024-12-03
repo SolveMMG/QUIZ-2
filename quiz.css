@@ -1,0 +1,127 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    animation: backgroundMove 10s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+@keyframes backgroundMove {
+    0% { background: #74ebd5; }
+    50% { background: #9face6; }
+    100% { background: #74ebd5; }
+}
+
+/* Centered Quiz Container */
+.quiz-container {
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 90%;
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 0.8s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
+/* Quiz Title */
+.quiz-title {
+    font-size: 2rem;
+    color: #4A90E2;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Question Text */
+.question-text {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+/* Timer */
+.timer {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #E74C3C;
+    margin-bottom: 10px;
+}
+
+/* Options */
+.option {
+    margin: 10px 0;
+    text-align: left;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.option input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Buttons */
+.quiz-button {
+    background: #4A90E2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin-top: 10px;
+}
+
+.quiz-button:hover {
+    background: #357ABD;
+    transform: scale(1.05);
+}
+
+.quiz-button:active {
+    transform: scale(1);
+}
+
+/* Feedback Text */
+.feedback {
+    font-size: 1rem;
+    margin-top: 15px;
+    color: #28A745;
+    font-weight: bold;
+}
+
+/* Final Score Display */
+.score-display {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .quiz-title {
+        font-size: 1.8rem;
+    }
+
+    .question-text {
+        font-size: 1rem;
+    }
+
+    .quiz-button {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+    .score-display {
+        font-size: 1.2rem;
+    }
+}
