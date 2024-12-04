@@ -134,4 +134,4 @@ document.addEventListener("click", (event) => {
 
 // Initialize the quiz
 displayQuestion();
-aaa
+
