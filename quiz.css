@@ -9,12 +9,14 @@ body {
     align-items: center;
     height: 100vh;
     color: #333;
+    
 }
 
 @keyframes backgroundMove {
     0% { background: #74ebd5; }
     50% { background: #9face6; }
     100% { background: #74ebd5; }
+    
 }
 
 /* Centered Quiz Container */
@@ -32,6 +34,7 @@ body {
 
 @keyframes fadeIn {
     to { opacity: 1; }
+    
 }
 
 /* Quiz Title */
@@ -119,10 +122,12 @@ body {
     .quiz-button {
         font-size: 0.9rem;
         padding: 8px 15px;
+        
     }
 
     .score-display {
         font-size: 1.2rem;
     }
+    
 }
 
